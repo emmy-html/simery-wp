@@ -1,4 +1,5 @@
-=== Simery ===
+[Screenshot of the theme](screenshot.jpg)
+# Simery 
 
 This WordPress theme was made for my Sims blog, where I'll be documenting my journey learning Python and how to write script mods for The Sims franchise.
 Contributors: emmy-html, tidythemes, bhadaway
@@ -10,7 +11,7 @@ License: GNU General Public License v3 or Later
 License URI: https://www.gnu.org/licenses/gpl.html
 
 
-=== License ===
+## License
 
 In its unchanged and original state:
 
