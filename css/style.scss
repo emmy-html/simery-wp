@@ -113,7 +113,17 @@ Simery is distributed under the terms of the GNU GPL
 @import "colors";
 @import "fonts";
 @import "mixins";
-
+.home {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }   
+}
+body.home {
+    background: $pink;
+}
 body {
     background: $black;
     color: $white;
@@ -132,8 +142,26 @@ h4 {
     font-family: $heading-font;
     font-weight: $regular;
 }
+h1,
+h2,
+h3,
+h4 {
+    text-transform: lowercase;
+}
 .content-wrapper {
     @include content-wrapper;
+}
+main {
+    a:link,
+    a:visited {
+        border-bottom: 2px solid $blue;
+        color: $yellow;
+        text-decoration: none;
+        &:hover {
+            color: $soft-pink;
+            transition: .3s color;
+        }
+    }
 }
 /* home page */ 
 .body-home {
@@ -177,6 +205,7 @@ h4 {
                 text-align: center;
                 a:link,
                 a:visited {
+                    border-bottom: none;
                     color: $black;
                     font-weight: $black-font;
                     text-align: center;
@@ -481,9 +510,10 @@ footer {
     .footer-social-media {
         i {
             color: $yellow;
-            margin-left: 10px;
+            margin-left: 20px;
             &:hover {
                 color: $pink;
+                transition: 1s color;
             }
         }
     }

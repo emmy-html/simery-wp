@@ -1,18 +1,22 @@
+
 <?php get_header(); ?>
-<main id="content">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<header class="header">
-<h1 class="entry-title"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
-</header>
-<div class="entry-content">
-<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
-<?php the_content(); ?>
-<div class="entry-links"><?php wp_link_pages(); ?></div>
-</div>
-</article>
-<?php if ( comments_open() && ! post_password_required() ) { comments_template( '', true ); } ?>
-<?php endwhile; endif; ?>
-</main>
-<?php get_sidebar(); ?>
+<body class="body-home">
+  <main>
+    <section id="home-page">
+      <div class="simery-span">
+          <div class="simery-span-content">
+                <h1>Simery</h1>
+                <h2>Learning to mod the world's most broken game, one day at a time.</h2>
+                <div class="button-container">
+                    <a href="<?php echo get_page_link( get_page_by_title( blog )->ID ); ?>">Enter &#8250;</a>
+                </div>
+          </div>
+          <aside class="footer-social-media">
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-github-alt fa-2x"></i>
+            <i class="fab fa-tumblr fa-2x"></i>
+            </aside>
+      </div>
+    </section>
+  </main>
 <?php get_footer(); ?>
