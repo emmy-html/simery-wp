@@ -5,7 +5,7 @@ This WordPress theme was made for my Sims blog, where I'll be documenting my jou
 
 Contributors: emmy-html, tidythemes, bhadaway
 
-[https://github.com/emmy-html/simery-wp](Theme link)
+[Theme link](https://github.com/emmy-html/simery-wp)
 
 Tags: two-columns, custom-front-page
 Requires at least: 5.1
