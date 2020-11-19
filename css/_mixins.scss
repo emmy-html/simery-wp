@@ -1,0 +1,60 @@
+@mixin content-wrapper {
+    padding: 0px 20px;
+    @media screen and (min-width: 768px) {
+        padding: 0px 60px;
+    }
+}
+@mixin gradient-border-bottom {
+    padding-bottom:5px;
+    background: /* gradient can be an image */
+      $pink-to-blue-gradient
+      bottom 
+      no-repeat; 
+    background-size:100% 5px ;/* if linear-gradient, we need to resize it */
+}
+@mixin reverse-gradient-border-bottom {
+    padding-bottom:6px;
+    background: /* gradient can be an image */
+      $reverse-pink-to-blue-gradient
+      bottom 
+      no-repeat; 
+    background-size:100% 5px ;/* if linear-gradient, we need to resize it */
+}
+@mixin short-gradient-border-bottom {
+    background: /* gradient can be an image */
+      $reverse-pink-to-blue-gradient
+      bottom 
+      no-repeat; 
+    background-size:60% 5px ;/* if linear-gradient, we need to resize it */
+}
+@mixin post-tags {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    text-transform: lowercase;
+    h3 {
+        margin: 0;
+    }
+    a:link,
+    a:visited {
+        background: $soft-pink;
+        color: $black;
+        font-weight: $black-font;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        text-transform: lowercase;
+        &:nth-of-type(2n+1) {
+            background: $blue;
+        }
+        &:nth-of-type(3n+1) {
+            background: $soft-pink;
+        }
+        &:nth-of-type(4n+1) {
+            background: $yellow;
+        }
+        &:hover {
+            background: $pink-to-blue-gradient;
+        }
+    } 
+}

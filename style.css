@@ -14,5 +14,611 @@ Text Domain: simery
 Simery WordPress Theme © 2020 emmy-html
 Simery is distributed under the terms of the GNU GPL
 */
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* universal */
+body {
+  background: #0D070D;
+  color: #f9f6f0;
+  font-family: "Roboto Slab", serif; }
+
+h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700; }
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 200; }
+
+h3,
+h4 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400; }
+
+.content-wrapper {
+  padding: 0px 20px; }
+  @media screen and (min-width: 768px) {
+    .content-wrapper {
+      padding: 0px 60px; } }
+
+/* home page */
+.body-home {
+  background: #D90368; }
+
+#home-page {
+  margin-top: 50px; }
+  #home-page .simery-span {
+    background: #0D070D;
+    border-radius: 300px;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px; }
+    #home-page .simery-span .simery-span-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #home-page .simery-span .simery-span-content h1 {
+        color: #f9f6f0;
+        font-size: 3rem;
+        margin-top: 80px;
+        line-height: 1rem;
+        text-transform: lowercase;
+        text-align: center;
+        padding-bottom: 30px;
+        background: linear-gradient(to right, #D90368, #FFD400, #0091FF) bottom #0D070D no-repeat;
+        background-size: 70% 5px;
+        /* if linear-gradient, we need to resize it */ }
+      #home-page .simery-span .simery-span-content h2 {
+        display: none; }
+      #home-page .simery-span .simery-span-content .button-container {
+        background: linear-gradient(to left, #D90368, #FFD400, #0091FF);
+        width: 100px;
+        padding: 5px;
+        text-align: center; }
+        #home-page .simery-span .simery-span-content .button-container a:link,
+        #home-page .simery-span .simery-span-content .button-container a:visited {
+          color: #0D070D;
+          font-weight: 900;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none; }
+        #home-page .simery-span .simery-span-content .button-container:hover {
+          width: 150px;
+          transition: 1s width; }
+        #home-page .simery-span .simery-span-content .button-container:not(:hover) {
+          transition: 1s width; }
+    #home-page .simery-span .footer-social-media {
+      display: flex;
+      color: #FFD400;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding-top: 20px;
+      width: 40%; }
+      #home-page .simery-span .footer-social-media i:hover {
+        color: #D90368;
+        transition: .5s color; }
+
+/* blog page */
+/* navigation */
+header {
+  font-size: 1.25rem;
+  padding-top: 20px; }
+  header .content-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    header .content-wrapper nav #menu-main-menu {
+      margin: 0px !important;
+      padding: 0px !important; }
+    header .content-wrapper nav ul {
+      margin: 0px !important;
+      padding: 0px !important; }
+      header .content-wrapper nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+      header .content-wrapper nav ul .menu-item {
+        margin-left: 10px;
+        padding: 0 !important; }
+    header .content-wrapper nav a:link,
+    header .content-wrapper nav a:visited {
+      color: #f9f6f0;
+      text-decoration: none;
+      text-transform: lowercase; }
+      header .content-wrapper nav a:link:hover,
+      header .content-wrapper nav a:visited:hover {
+        padding-bottom: 5px;
+        background: linear-gradient(to left, #D90368, #FFD400, #0091FF) bottom no-repeat;
+        background-size: 100% 5px;
+        /* if linear-gradient, we need to resize it */
+        color: #FFD400;
+        transition: 1s background-image;
+        transition: 1s color; }
+    header .content-wrapper nav .active {
+      padding-bottom: 5px;
+      background: linear-gradient(to left, #D90368, #FFD400, #0091FF) bottom no-repeat;
+      background-size: 100% 5px;
+      /* if linear-gradient, we need to resize it */ }
+      header .content-wrapper nav .active a:link,
+      header .content-wrapper nav .active a:visited {
+        color: #FC4FA0; }
+        header .content-wrapper nav .active a:link:hover,
+        header .content-wrapper nav .active a:visited:hover {
+          color: #FFD400; }
+    header .content-wrapper i {
+      color: #FFD400; }
+      header .content-wrapper i:hover {
+        color: #FC4FA0;
+        transition: .5s color; }
+
+/* blog content */
+#blog-content {
+  display: flex;
+  flex-direction: column-reverse;
+  /* sidebar */
+  /* blog posts */ }
+  #blog-content .sidebar {
+    /* simery circle */ }
+    #blog-content .sidebar #simery-circle .simery-circle-border {
+      position: relative;
+      background: linear-gradient(to right, #D90368, #FFD400, #0091FF);
+      border-radius: 200px;
+      width: 230px;
+      height: 230px;
+      margin: 0 auto; }
+      #blog-content .sidebar #simery-circle .simery-circle-border .simery-span {
+        position: absolute;
+        background: #0D070D;
+        border-radius: 200px;
+        color: #f9f6f0;
+        height: 200px;
+        width: 200px; }
+        #blog-content .sidebar #simery-circle .simery-circle-border .simery-span .simery-span-content {
+          color: #f9f6f0;
+          padding-top: 60px;
+          line-height: 1rem;
+          text-transform: lowercase;
+          text-align: center;
+          padding-bottom: 5px;
+          background: linear-gradient(to right, #D90368, #FFD400, #0091FF) bottom no-repeat;
+          background-size: 50% 5px;
+          /* if linear-gradient, we need to resize it */ }
+    #blog-content .sidebar .sidebar-bio .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px; }
+      #blog-content .sidebar .sidebar-bio .content-wrapper img {
+        border-radius: 100px;
+        width: 100px;
+        height: 100px; }
+      #blog-content .sidebar .sidebar-bio .content-wrapper h2 {
+        line-height: 1.75rem;
+        text-transform: lowercase;
+        margin: 0; }
+        #blog-content .sidebar .sidebar-bio .content-wrapper h2 span {
+          padding-bottom: 5px;
+          background: linear-gradient(to left, #D90368, #FFD400, #0091FF) bottom no-repeat;
+          background-size: 100% 5px;
+          /* if linear-gradient, we need to resize it */ }
+      #blog-content .sidebar .sidebar-bio .content-wrapper h3 {
+        line-height: 1.25rem;
+        margin-top: 10px;
+        text-transform: lowercase; }
+    #blog-content .sidebar .sidebar-latest-posts h2 {
+      padding-bottom: 6px;
+      background: linear-gradient(to right, #D90368, #FFD400, #0091FF) bottom no-repeat;
+      background-size: 100% 5px;
+      /* if linear-gradient, we need to resize it */
+      text-transform: lowercase;
+      text-align: center; }
+    #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post {
+      width: 100%; }
+      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post h3,
+      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:link,
+      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:visited {
+        color: #0D070D;
+        font-weight: 700;
+        padding: 5px;
+        text-transform: lowercase; }
+        #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post h3:hover,
+        #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:link:hover,
+        #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:visited:hover {
+          background: linear-gradient(to left, #D90368, #FFD400, #0091FF); }
+      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post:nth-of-type(even) {
+        background: #FC4FA0; }
+      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post:nth-of-type(odd) {
+        background: #0091FF; }
+    #blog-content .sidebar .popular-tags .sidebar-tags {
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+      text-transform: lowercase; }
+      #blog-content .sidebar .popular-tags .sidebar-tags h3 {
+        margin: 0; }
+      #blog-content .sidebar .popular-tags .sidebar-tags a:link,
+      #blog-content .sidebar .popular-tags .sidebar-tags a:visited {
+        background: #FC4FA0;
+        color: #0D070D;
+        font-weight: 900;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        text-transform: lowercase; }
+        #blog-content .sidebar .popular-tags .sidebar-tags a:link:nth-of-type(2n+1),
+        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:nth-of-type(2n+1) {
+          background: #0091FF; }
+        #blog-content .sidebar .popular-tags .sidebar-tags a:link:nth-of-type(3n+1),
+        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:nth-of-type(3n+1) {
+          background: #FC4FA0; }
+        #blog-content .sidebar .popular-tags .sidebar-tags a:link:nth-of-type(4n+1),
+        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:nth-of-type(4n+1) {
+          background: #FFD400; }
+        #blog-content .sidebar .popular-tags .sidebar-tags a:link:hover,
+        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:hover {
+          background: linear-gradient(to left, #D90368, #FFD400, #0091FF); }
+    #blog-content .sidebar .sidebar-social-media {
+      width: 250px;
+      display: flex;
+      justify-content: space-around; }
+      #blog-content .sidebar .sidebar-social-media i {
+        color: #FFD400; }
+        #blog-content .sidebar .sidebar-social-media i:hover {
+          color: #D90368;
+          transition: 1s color; }
+  #blog-content .blog-posts-single {
+    padding-bottom: 50px;
+    /* music player */
+    /* posts tags container */ }
+    #blog-content .blog-posts-single h1 {
+      padding-bottom: 6px;
+      background: linear-gradient(to right, #D90368, #FFD400, #0091FF) bottom no-repeat;
+      background-size: 100% 5px;
+      /* if linear-gradient, we need to resize it */
+      font-size: 2rem;
+      line-height: 1.75rem;
+      text-transform: lowercase; }
+    #blog-content .blog-posts-single .blog-post-author-info {
+      display: flex;
+      align-items: center; }
+      #blog-content .blog-posts-single .blog-post-author-info img {
+        border-radius: 100px;
+        margin-right: 15px;
+        width: 100px;
+        height: 100px; }
+      #blog-content .blog-posts-single .blog-post-author-info h3 {
+        font-weight: 700;
+        font-size: .75rem;
+        line-height: 1rem;
+        margin: 0;
+        text-transform: lowercase; }
+        #blog-content .blog-posts-single .blog-post-author-info h3 span {
+          display: inline-block;
+          font-weight: 400; }
+        #blog-content .blog-posts-single .blog-post-author-info h3:nth-of-type(1) {
+          color: #FC4FA0; }
+        #blog-content .blog-posts-single .blog-post-author-info h3:nth-of-type(2) {
+          color: #FF9100; }
+        #blog-content .blog-posts-single .blog-post-author-info h3:nth-of-type(3) {
+          color: #FFD400; }
+        #blog-content .blog-posts-single .blog-post-author-info h3:nth-of-type(4) {
+          color: #0091FF; }
+      #blog-content .blog-posts-single .blog-post-author-info i {
+        line-height: .5rem; }
+      #blog-content .blog-posts-single .blog-post-author-info .featured-song {
+        display: none; }
+    #blog-content .blog-posts-single iframe {
+      margin: 10px 0px; }
+    #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container {
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+      text-transform: lowercase; }
+      #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container h3 {
+        margin: 0; }
+      #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link,
+      #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited {
+        background: #FC4FA0;
+        color: #0D070D;
+        font-weight: 900;
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        text-transform: lowercase; }
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:nth-of-type(2n+1),
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:nth-of-type(2n+1) {
+          background: #0091FF; }
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:nth-of-type(3n+1),
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:nth-of-type(3n+1) {
+          background: #FC4FA0; }
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:nth-of-type(4n+1),
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:nth-of-type(4n+1) {
+          background: #FFD400; }
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:hover,
+        #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:hover {
+          background: linear-gradient(to left, #D90368, #FFD400, #0091FF); }
+
+/* footer */
+footer {
+  margin: 35px 0px; }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between; }
+  footer h1 {
+    text-transform: lowercase;
+    margin: 0; }
+  footer form input {
+    background: #0D070D;
+    border: 2px solid #D90368;
+    border-radius: 5px;
+    color: #f9f6f0; }
+  footer form input[type="submit"] {
+    background: none;
+    text-transform: lowercase; }
+    footer form input[type="submit"]:hover {
+      background: #FFD400;
+      border: 2px solid #FFD400;
+      color: #0D070D;
+      transition: 1s background-color; }
+  footer .footer-social-media i {
+    color: #FFD400;
+    margin-left: 10px; }
+    footer .footer-social-media i:hover {
+      color: #D90368; }
+
+/* desktop styles */
+@media screen and (min-width: 768px) {
+  /* desktop home page */
+  #home-page .simery-span {
+    border-radius: 600px;
+    width: 600px;
+    height: 600px; }
+    #home-page .simery-span .simery-span-content h1 {
+      font-size: 6rem;
+      padding-bottom: 60px;
+      background-size: 70% 10px;
+      margin-top: 180px;
+      margin-bottom: 0px; }
+    #home-page .simery-span .simery-span-content h2 {
+      display: block;
+      color: #f9f6f0;
+      width: 70%;
+      text-transform: lowercase;
+      text-align: center; }
+    #home-page .simery-span .simery-span-content .button-container {
+      width: 200px; }
+      #home-page .simery-span .simery-span-content .button-container:hover {
+        width: 300px; }
+
+  /* desktop blog posts */
+  #blog-content {
+    display: flex;
+    flex-flow: row nowrap; }
+    #blog-content .blog-posts .blog-posts-single .blog-post-author-info .featured-song {
+      display: block;
+      margin-left: 50px; } }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important; }
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */ }
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto; }
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+.invisible {
+  visibility: hidden; }
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre {
+    white-space: pre-wrap !important; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
 
 /*# sourceMappingURL=style.css.map */
