@@ -199,8 +199,7 @@ header {
         margin: 0;
         padding: 0; }
       header .content-wrapper nav ul .menu-item {
-        margin-left: 10px;
-        padding: 0 !important; }
+        margin-left: 10px; }
     header .content-wrapper nav a:link,
     header .content-wrapper nav a:visited {
       color: #f9f6f0;
@@ -212,7 +211,7 @@ header {
         background: linear-gradient(to left, #D90368, #FFD400, #0091FF) bottom no-repeat;
         background-size: 100% 5px;
         /* if linear-gradient, we need to resize it */
-        color: #FFD400;
+        color: #FC4FA0;
         transition: 1s background-image;
         transition: 1s color; }
     header .content-wrapper nav .active {
@@ -222,10 +221,10 @@ header {
       /* if linear-gradient, we need to resize it */ }
       header .content-wrapper nav .active a:link,
       header .content-wrapper nav .active a:visited {
-        color: #FC4FA0; }
+        color: #FFD400; }
         header .content-wrapper nav .active a:link:hover,
         header .content-wrapper nav .active a:visited:hover {
-          color: #FFD400; }
+          color: #FC4FA0; }
     header .content-wrapper i {
       color: #FFD400; }
       header .content-wrapper i:hover {

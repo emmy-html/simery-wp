@@ -233,7 +233,6 @@ header {
                 }
                 .menu-item {
                     margin-left: 10px;
-                    padding: 0 !important;
                 }
             }
             a:link,
@@ -243,7 +242,7 @@ header {
                 text-transform: lowercase;
                 &:hover {
                     @include gradient-border-bottom;
-                    color: $yellow;
+                    color: $soft-pink;
                     transition: 1s background-image;
                     transition: 1s color;
                 }
@@ -252,9 +251,9 @@ header {
                 @include gradient-border-bottom;
                 a:link,
                 a:visited {
-                    color: $soft-pink;
+                    color: $yellow;
                     &:hover {
-                        color: $yellow
+                        color: $soft-pink;
                     }
                 }
             }

@@ -4,6 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <?php wp_head(); ?>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">

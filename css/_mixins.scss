@@ -20,13 +20,6 @@
       no-repeat; 
     background-size:100% 5px ;/* if linear-gradient, we need to resize it */
 }
-@mixin short-gradient-border-bottom {
-    background: /* gradient can be an image */
-      $reverse-pink-to-blue-gradient
-      bottom 
-      no-repeat; 
-    background-size:60% 5px ;/* if linear-gradient, we need to resize it */
-}
 @mixin post-tags {
     display: flex;
     align-items: center;
