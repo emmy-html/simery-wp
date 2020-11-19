@@ -1,4 +1,4 @@
-![Screenshot of the theme](img/screenshot.jpg)
+![Screenshot of the theme](/img/screenshot.jpg)
 # Simery 
 
 This WordPress theme was made for my Sims blog, where I'll be documenting my journey learning Python and how to write script mods for The Sims franchise.
