@@ -2,9 +2,12 @@
 # Simery 
 
 This WordPress theme was made for my Sims blog, where I'll be documenting my journey learning Python and how to write script mods for The Sims franchise.
+
 Contributors: emmy-html, tidythemes, bhadaway
-Theme link: https://github.com/emmy-html/simery-wp
-Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+
+[https://github.com/emmy-html/simery-wp](Theme link)
+
+Tags: two-columns, custom-front-page
 Requires at least: 5.1
 Tested up to: 5.5.3
 License: GNU General Public License v3 or Later
