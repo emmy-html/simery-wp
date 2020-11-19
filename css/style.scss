@@ -458,15 +458,23 @@ footer {
             border: 2px solid $pink;
             border-radius: 5px;
             color: $white;
+            &:hover {
+                border: 2px solid $yellow;
+            }
         }
         input[type="submit"] {
-            background: none;
-            text-transform: lowercase;
+            background: $soft-pink;
+            border: 2px solid $soft-pink;
+            color: $black;
+            font-family: $body-font;
+            font-weight: $bold;
+            text-transform: uppercase;
             &:hover {
                 background: $yellow;
                 border: 2px solid $yellow;
                 color: $black;
                 transition: 1s background-color;
+                transition: 1s border;
             }
         }
     }

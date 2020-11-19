@@ -433,14 +433,21 @@ footer {
     border: 2px solid #D90368;
     border-radius: 5px;
     color: #f9f6f0; }
+    footer form input:hover {
+      border: 2px solid #FFD400; }
   footer form input[type="submit"] {
-    background: none;
-    text-transform: lowercase; }
+    background: #FC4FA0;
+    border: 2px solid #FC4FA0;
+    color: #0D070D;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    text-transform: uppercase; }
     footer form input[type="submit"]:hover {
       background: #FFD400;
       border: 2px solid #FFD400;
       color: #0D070D;
-      transition: 1s background-color; }
+      transition: 1s background-color;
+      transition: 1s border; }
   footer .footer-social-media i {
     color: #FFD400;
     margin-left: 10px; }
