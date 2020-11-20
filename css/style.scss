@@ -163,6 +163,12 @@ main {
         }
     }
 }
+.entry-title {
+    a:link,
+    a:visited {
+        border-bottom: none;
+    }
+}
 /* home page */ 
 .body-home {
     background: $pink;
@@ -299,7 +305,7 @@ header {
 /* blog content */ 
 #blog-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     /* sidebar */
     .sidebar {
         /* simery circle */ 
@@ -320,11 +326,12 @@ header {
                     width: 200px;
                     .simery-span-content {
                         color: $white;
+                        font-size: 1.75rem;
                         padding-top: 60px;
-                        line-height: 1rem;
+                        line-height: .25rem;
                         text-transform: lowercase;
                         text-align:center;
-                        padding-bottom:5px;
+                        padding-bottom:1px;
                         background: /* gradient can be an image */
                         $reverse-pink-to-blue-gradient
                         bottom 
@@ -411,7 +418,6 @@ header {
     }
     /* blog posts */ 
     .blog-posts-single {
-        padding-bottom: 50px;
         h1 {
             @include reverse-gradient-border-bottom;
             font-size: 2rem;
@@ -554,6 +560,8 @@ footer {
     #blog-content {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-top: 50px;
         .blog-posts {
             .blog-posts-single {
                 .blog-post-author-info {
