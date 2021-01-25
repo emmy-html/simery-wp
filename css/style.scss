@@ -308,6 +308,11 @@ header {
     flex-direction: column;
     /* sidebar */
     .sidebar {
+        h2 {
+            @include reverse-gradient-border-bottom;
+            text-transform: lowercase;
+            text-align: center;
+        }
         /* simery circle */ 
         #simery-circle {
             .simery-circle-border {
@@ -342,7 +347,6 @@ header {
             }
         }
         .sidebar-bio {
-            .content-wrapper {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -366,28 +370,25 @@ header {
                     margin-top: 10px;
                     text-transform: lowercase;
                 }
-            }
-
         }
         .sidebar-latest-posts {
-            h2 {
-                @include reverse-gradient-border-bottom;
-                text-transform: lowercase;
-                text-align: center;
-            }
-            .sidebar-latest-posts-container {
-                .sidebar-post {
-                    width: 100%;
-                    h3,
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                li {
+                    margin-bottom: 5px;
+                    padding: 5px;
+                    text-align: center;
                     a:link,
                     a:visited {
                         color: $black;
+                        border-bottom: none;
                         font-weight: $bold;
-                        padding: 5px;
+                        text-align: center;
                         text-transform: lowercase;
-                        &:hover {
-                            background: $pink-to-blue-gradient;
-                        }
+                        width: 100%;
                     }
                     &:nth-of-type(even) {
                         background: $soft-pink;
@@ -395,14 +396,17 @@ header {
                     &:nth-of-type(odd) {
                         background: $blue;
                     }
+                    &:hover {
+                        background: $pink-to-blue-gradient;
+                    }
                 }
             }
         }
-        .popular-tags {
             .sidebar-tags {
-                @include post-tags;
+                .tagcloud {
+                    @include sidebar-post-tags;
+                }
             }
-        }
         .sidebar-social-media {
             width: 250px;
             display: flex;
@@ -561,8 +565,8 @@ footer {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        margin-top: 50px;
         .blog-posts {
+            width: 73%;
             .blog-posts-single {
                 .blog-post-author-info {
                     .featured-song {
@@ -571,6 +575,10 @@ footer {
                     }
                 }
             }
+        }
+        aside.sidebar {
+            margin-top: 50px;
+            width: 25%;
         }
     }
 }

@@ -80,10 +80,10 @@ function simery_widgets_init() {
 register_sidebar( array(
 'name' => esc_html__( 'Sidebar Widget Area', 'simery' ),
 'id' => 'primary-widget-area',
-'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-'after_widget' => '</li>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+'after_widget' => '</div>',
+'before_title' => '<h2>',
+'after_title' => '</h2>',
 ) );
 }
 add_action( 'wp_head', 'simery_pingback_header' );

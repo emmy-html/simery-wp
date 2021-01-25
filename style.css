@@ -268,6 +268,13 @@ header {
   /* blog posts */ }
   #blog-content .sidebar {
     /* simery circle */ }
+    #blog-content .sidebar h2 {
+      padding-bottom: 6px;
+      background: linear-gradient(to right, #D90368, #FFD400, #0091FF) bottom no-repeat;
+      background-size: 100% 5px;
+      /* if linear-gradient, we need to resize it */
+      text-transform: lowercase;
+      text-align: center; }
     #blog-content .sidebar #simery-circle .simery-circle-border {
       position: relative;
       background: linear-gradient(to right, #D90368, #FFD400, #0091FF);
@@ -293,80 +300,81 @@ header {
           background: linear-gradient(to right, #D90368, #FFD400, #0091FF) bottom no-repeat;
           background-size: 50% 5px;
           /* if linear-gradient, we need to resize it */ }
-    #blog-content .sidebar .sidebar-bio .content-wrapper {
+    #blog-content .sidebar .sidebar-bio {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-top: 50px; }
-      #blog-content .sidebar .sidebar-bio .content-wrapper img {
+      #blog-content .sidebar .sidebar-bio img {
         border-radius: 100px;
         width: 100px;
         height: 100px; }
-      #blog-content .sidebar .sidebar-bio .content-wrapper h2 {
+      #blog-content .sidebar .sidebar-bio h2 {
         line-height: 1.75rem;
         text-transform: lowercase;
         margin: 0; }
-        #blog-content .sidebar .sidebar-bio .content-wrapper h2 span {
+        #blog-content .sidebar .sidebar-bio h2 span {
           padding-bottom: 5px;
           background: linear-gradient(to left, #D90368, #FFD400, #0091FF) bottom no-repeat;
           background-size: 100% 5px;
           /* if linear-gradient, we need to resize it */ }
-      #blog-content .sidebar .sidebar-bio .content-wrapper h3 {
+      #blog-content .sidebar .sidebar-bio h3 {
         line-height: 1.25rem;
         margin-top: 10px;
         text-transform: lowercase; }
-    #blog-content .sidebar .sidebar-latest-posts h2 {
-      padding-bottom: 6px;
-      background: linear-gradient(to right, #D90368, #FFD400, #0091FF) bottom no-repeat;
-      background-size: 100% 5px;
-      /* if linear-gradient, we need to resize it */
-      text-transform: lowercase;
-      text-align: center; }
-    #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post {
+    #blog-content .sidebar .sidebar-latest-posts ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
       width: 100%; }
-      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post h3,
-      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:link,
-      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:visited {
-        color: #0D070D;
-        font-weight: 700;
+      #blog-content .sidebar .sidebar-latest-posts ul li {
+        margin-bottom: 5px;
         padding: 5px;
-        text-transform: lowercase; }
-        #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post h3:hover,
-        #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:link:hover,
-        #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post a:visited:hover {
+        text-align: center; }
+        #blog-content .sidebar .sidebar-latest-posts ul li a:link,
+        #blog-content .sidebar .sidebar-latest-posts ul li a:visited {
+          color: #0D070D;
+          border-bottom: none;
+          font-weight: 700;
+          text-align: center;
+          text-transform: lowercase;
+          width: 100%; }
+        #blog-content .sidebar .sidebar-latest-posts ul li:nth-of-type(even) {
+          background: #FC4FA0; }
+        #blog-content .sidebar .sidebar-latest-posts ul li:nth-of-type(odd) {
+          background: #0091FF; }
+        #blog-content .sidebar .sidebar-latest-posts ul li:hover {
           background: linear-gradient(to left, #D90368, #FFD400, #0091FF); }
-      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post:nth-of-type(even) {
-        background: #FC4FA0; }
-      #blog-content .sidebar .sidebar-latest-posts .sidebar-latest-posts-container .sidebar-post:nth-of-type(odd) {
-        background: #0091FF; }
-    #blog-content .sidebar .popular-tags .sidebar-tags {
+    #blog-content .sidebar .sidebar-tags .tagcloud {
       display: flex;
       align-items: center;
       flex-flow: row wrap;
       text-transform: lowercase; }
-      #blog-content .sidebar .popular-tags .sidebar-tags h3 {
+      #blog-content .sidebar .sidebar-tags .tagcloud h3 {
         margin: 0; }
-      #blog-content .sidebar .popular-tags .sidebar-tags a:link,
-      #blog-content .sidebar .popular-tags .sidebar-tags a:visited {
+      #blog-content .sidebar .sidebar-tags .tagcloud a:link,
+      #blog-content .sidebar .sidebar-tags .tagcloud a:visited {
         background: #FC4FA0;
+        border-bottom: none;
         color: #0D070D;
+        font-size: 1rem !important;
         font-weight: 900;
         margin: 5px;
         padding: 5px;
         text-decoration: none;
         text-transform: lowercase; }
-        #blog-content .sidebar .popular-tags .sidebar-tags a:link:nth-of-type(2n+1),
-        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:nth-of-type(2n+1) {
+        #blog-content .sidebar .sidebar-tags .tagcloud a:link:nth-of-type(2n+1),
+        #blog-content .sidebar .sidebar-tags .tagcloud a:visited:nth-of-type(2n+1) {
           background: #0091FF; }
-        #blog-content .sidebar .popular-tags .sidebar-tags a:link:nth-of-type(3n+1),
-        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:nth-of-type(3n+1) {
+        #blog-content .sidebar .sidebar-tags .tagcloud a:link:nth-of-type(3n+1),
+        #blog-content .sidebar .sidebar-tags .tagcloud a:visited:nth-of-type(3n+1) {
           background: #FC4FA0; }
-        #blog-content .sidebar .popular-tags .sidebar-tags a:link:nth-of-type(4n+1),
-        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:nth-of-type(4n+1) {
+        #blog-content .sidebar .sidebar-tags .tagcloud a:link:nth-of-type(4n+1),
+        #blog-content .sidebar .sidebar-tags .tagcloud a:visited:nth-of-type(4n+1) {
           background: #FFD400; }
-        #blog-content .sidebar .popular-tags .sidebar-tags a:link:hover,
-        #blog-content .sidebar .popular-tags .sidebar-tags a:visited:hover {
+        #blog-content .sidebar .sidebar-tags .tagcloud a:link:hover,
+        #blog-content .sidebar .sidebar-tags .tagcloud a:visited:hover {
           background: linear-gradient(to left, #D90368, #FFD400, #0091FF); }
     #blog-content .sidebar .sidebar-social-media {
       width: 250px;
@@ -512,11 +520,15 @@ footer {
   #blog-content {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    margin-top: 50px; }
-    #blog-content .blog-posts .blog-posts-single .blog-post-author-info .featured-song {
-      display: block;
-      margin-left: 50px; } }
+    justify-content: space-between; }
+    #blog-content .blog-posts {
+      width: 73%; }
+      #blog-content .blog-posts .blog-posts-single .blog-post-author-info .featured-song {
+        display: block;
+        margin-left: 50px; }
+    #blog-content aside.sidebar {
+      margin-top: 50px;
+      width: 25%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
