@@ -142,9 +142,11 @@ main a:visited {
     color: #FC4FA0;
     transition: .3s color; }
 
-.entry-title a:link,
-.entry-title a:visited {
-  border-bottom: none; }
+.entry-title {
+  margin: 0px 0px 10px 0px; }
+  .entry-title a:link,
+  .entry-title a:visited {
+    border-bottom: none; }
 
 /* home page */
 .body-home {
