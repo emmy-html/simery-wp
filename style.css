@@ -147,6 +147,9 @@ main a:visited {
   .entry-title a:link,
   .entry-title a:visited {
     border-bottom: none; }
+    .entry-title a:link:hover,
+    .entry-title a:visited:hover {
+      color: #fff; }
 
 /* home page */
 .body-home {
@@ -265,7 +268,7 @@ header {
 /* blog content */
 #blog-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   /* sidebar */
   /* blog posts */ }
   #blog-content .sidebar {
@@ -310,8 +313,8 @@ header {
       margin-top: 50px; }
       #blog-content .sidebar .sidebar-bio img {
         border-radius: 100px;
-        width: 100px;
-        height: 100px; }
+        width: 150px;
+        height: 150px; }
       #blog-content .sidebar .sidebar-bio h2 {
         line-height: 1.75rem;
         text-transform: lowercase;
@@ -408,8 +411,8 @@ header {
         height: 100px; }
       #blog-content .blog-posts-single .blog-post-author-info h3 {
         font-weight: 700;
-        font-size: .75rem;
-        line-height: 1rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
         margin: 0;
         text-transform: lowercase; }
         #blog-content .blog-posts-single .blog-post-author-info h3 span {
@@ -439,6 +442,7 @@ header {
       #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link,
       #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited {
         background: #FC4FA0;
+        border-bottom: none !important;
         color: #0D070D;
         font-weight: 900;
         margin: 5px;
@@ -464,7 +468,10 @@ footer {
   footer .footer-content {
     display: flex;
     justify-content: space-between; }
+    footer .footer-content i {
+      color: #FFD400; }
   footer h1 {
+    color: #FC4FA0;
     text-transform: lowercase;
     margin: 0; }
   footer form input {
@@ -487,12 +494,75 @@ footer {
       color: #0D070D;
       transition: 1s background-color;
       transition: 1s border; }
-  footer .footer-social-media i {
+  footer .footer-social-media a:link,
+  footer .footer-social-media a:visited {
+    border-bottom: none;
     color: #FFD400;
     margin-left: 20px; }
-    footer .footer-social-media i:hover {
-      color: #D90368;
-      transition: 1s color; }
+  footer .footer-social-media i:hover {
+    color: #FC4FA0;
+    transition: 1s color; }
+
+/* comment section */
+#comments {
+  padding-bottom: 5px;
+  background: linear-gradient(to left, #D90368, #FFD400, #0091FF) bottom no-repeat;
+  background-size: 100% 5px;
+  /* if linear-gradient, we need to resize it */
+  margin-bottom: 20px; }
+  #comments form.comment-form .comment-form-comment {
+    display: flex;
+    flex-direction: column; }
+    #comments form.comment-form .comment-form-comment textarea#comment {
+      border: 5px solid #FFD400; }
+  #comments form.comment-form .form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #comments form.comment-form .form-submit input[type="submit"] {
+      background: linear-gradient(to right, #D90368, #FFD400, #0091FF);
+      border: none;
+      color: #0D070D;
+      font-family: "Roboto Slab", serif;
+      font-size: 1.25rem;
+      font-weight: 900;
+      padding: 10px;
+      text-transform: lowercase;
+      width: 100%;
+      transition: 1s width; }
+      #comments form.comment-form .form-submit input[type="submit"]:hover {
+        background: linear-gradient(to left, #D90368, #FFD400, #0091FF);
+        width: 60%;
+        transition: 1s width; }
+
+p.comment-form-author {
+  display: inline-block !important;
+  margin: 0px !important; }
+  p.comment-form-author input {
+    width: 100%; }
+
+p.comment-form-email {
+  display: inline-block !important;
+  margin: 0px !important; }
+  p.comment-form-email input {
+    width: 100%; }
+
+p.comment-form-url {
+  display: none !important; }
+
+/* after post footer content */
+.post-footer {
+  margin: 10px 0px !important; }
+
+h2.screen-reader-text, h3.comment-reply-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.75rem;
+  font-weight: 200;
+  margin: 5px 0px !important; }
+
+.nav-links {
+  display: flex;
+  justify-content: space-between; }
 
 /* desktop styles */
 @media screen and (min-width: 768px) {
@@ -530,7 +600,16 @@ footer {
         margin-left: 50px; }
     #blog-content aside.sidebar {
       margin-top: 50px;
-      width: 25%; } }
+      width: 25%; }
+
+  /* comment section */
+  #comments .form-submit input[type="submit"] {
+    width: 60%; }
+    #comments .form-submit input[type="submit"]:hover {
+      width: 100%; }
+
+  p.comment-form-author {
+    padding-right: 10px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

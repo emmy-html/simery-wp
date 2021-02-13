@@ -1,5 +1,5 @@
-<footer class="entry-footer">
-<span class="cat-links"><?php esc_html_e( 'Categories: ', 'simery' ); ?><?php the_category( ', ' ); ?></span>
-<span class="tag-links"><?php the_tags(); ?></span>
-<?php if ( comments_open() ) { echo '<span class="meta-sep">|</span> <span class="comments-link"><a href="' . esc_url( get_comments_link() ) . '">' . sprintf( esc_html__( 'Comments', 'simery' ) ) . '</a></span>'; } ?>
-</footer> 
+    <div class="blog-post-tags">
+        <div class="blog-post-tags-container">
+            <?php the_tags($before = '<h3>Tags:</h3>', $sep = null, $after = null); ?>
+        </div>
+    </div>

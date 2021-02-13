@@ -31,6 +31,7 @@
     a:link,
     a:visited {
         background: $soft-pink;
+        border-bottom: none !important;
         color: $black;
         font-weight: $black-font;
         margin: 5px;

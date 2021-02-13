@@ -94,6 +94,7 @@ printf( '<link rel="pingback" href="%s" />' . "\n", esc_url( get_bloginfo( 'ping
 }
 add_action( 'comment_form_before', 'simery_enqueue_comment_reply_script' );
 function simery_enqueue_comment_reply_script() {
+  
 if ( get_option( 'thread_comments' ) ) {
 wp_enqueue_script( 'comment-reply' );
 }
@@ -121,4 +122,24 @@ function special_nav_class ($classes, $item) {
     $classes[] = 'active ';
   }
   return $classes;
+}
+// change comment form fields order
+add_filter( 'comment_form_fields', 'mo_comment_fields_custom_order' );
+function mo_comment_fields_custom_order( $fields ) {
+	$comment_field = $fields['comment'];
+	$author_field = $fields['author'];
+	$email_field = $fields['email'];
+	$url_field = $fields['url'];
+	unset( $fields['comment'] );
+	unset( $fields['author'] );
+	unset( $fields['email'] );
+	unset( $fields['url'] );
+	// the order of fields is the order below, change it as needed:
+  $fields['author'] = $author_field;
+	$fields['email'] = $email_field;
+	$fields['url'] = $url_field;
+	$fields['comment'] = $comment_field;
+	// done ordering, now return the fields:
+	return $fields;
+  
 }
