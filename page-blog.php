@@ -7,7 +7,7 @@
                 <div class="content-wrapper">
                     <?php 
 // the query
-$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3)); ?>
+$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>10)); ?>
 
                     <?php if ( $wpb_all_query->have_posts() ) : ?>
 

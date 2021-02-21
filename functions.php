@@ -60,7 +60,7 @@ return $title;
 add_filter( 'the_content_more_link', 'simery_read_more_link' );
 function simery_read_more_link() {
 if ( ! is_admin() ) {
-return ' <a href="' . esc_url( get_permalink() ) . '" class="more-link">...</a>';
+return ' <a href="' . esc_url( get_permalink() ) . '" class="more-link">Read More &#8250;</a>';
 }
 }
 add_filter( 'excerpt_more', 'simery_excerpt_read_more_link' );

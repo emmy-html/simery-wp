@@ -158,7 +158,8 @@ main {
         color: $yellow;
         text-decoration: none;
         &:hover {
-            color: $soft-pink;
+            border-bottom: 2px solid $soft-pink;
+            color: #fff;
             transition: .3s color;
         }
     }
@@ -169,6 +170,7 @@ main {
     a:visited {
         border-bottom: none;
         &:hover {
+            border-bottom: none;
             color: #fff;
         }
     }
@@ -412,7 +414,7 @@ header {
                 }
             }
         .sidebar-social-media {
-            width: 250px;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             i {
@@ -431,6 +433,21 @@ header {
             font-size: 2rem;
             line-height: 1.75rem;
             text-transform: lowercase;
+        }
+        h2 {
+            color: $yellow;
+            padding: 0px;
+            margin: 0px;
+        }
+        h3 {
+            color: $soft-pink;
+        }
+        .wp-block-image {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
         }
         .blog-post-author-info {
             display: flex;
@@ -477,6 +494,7 @@ header {
         }
         /* posts tags container */ 
         .blog-post-tags {
+            margin-top: 5px;
             .blog-post-tags-container {
                 @include post-tags;
             }
@@ -526,6 +544,7 @@ footer {
         }
     }
     .footer-social-media {
+        display: none;
         a:link,
         a:visited {
             border-bottom: none;
@@ -549,7 +568,7 @@ footer {
             display: flex;
             flex-direction: column;
             textarea#comment {
-                border: 5px solid $yellow;
+                border: 3px solid $pink;
             }
         }
         .form-submit {
@@ -580,6 +599,7 @@ p.comment-form-author {
     display: inline-block !important;
     margin: 0px !important;
     input {
+        border: 2px solid $pink;
         width: 100%;
     }
 }
@@ -587,6 +607,7 @@ p.comment-form-email {
     display: inline-block !important;
     margin: 0px !important;
     input {
+        border: 2px solid $pink;
         width: 100%;
     }
 }
@@ -637,6 +658,12 @@ h2.screen-reader-text, h3.comment-reply-title {
                     }
                 }
             }
+        }
+    }
+    /* footer */ 
+    footer {
+        .footer-social-media {
+            display: inline-block;
         }
     }
     /* desktop blog posts */ 
