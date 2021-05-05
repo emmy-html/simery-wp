@@ -30,7 +30,6 @@
     }
     a:link,
     a:visited {
-        background: $soft-pink;
         border-bottom: none !important;
         color: $black;
         font-weight: $black-font;
@@ -38,13 +37,13 @@
         padding: 5px;
         text-decoration: none;
         text-transform: lowercase;
+        &:nth-of-type(n+1) {
+            background: $soft-pink;
+        }  
         &:nth-of-type(2n+1) {
             background: $blue;
         }
         &:nth-of-type(3n+1) {
-            background: $soft-pink;
-        }
-        &:nth-of-type(4n+1) {
             background: $yellow;
         }
         &:hover {
@@ -62,7 +61,6 @@
     }
     a:link,
     a:visited {
-        background: $soft-pink;
         border-bottom: none;
         color: $black;
         font-size: 1rem !important;
@@ -71,13 +69,13 @@
         padding: 5px;
         text-decoration: none;
         text-transform: lowercase;
+        &:nth-of-type(n+1) {
+            background: $soft-pink;
+        }  
         &:nth-of-type(2n+1) {
             background: $blue;
         }
         &:nth-of-type(3n+1) {
-            background: $soft-pink;
-        }
-        &:nth-of-type(4n+1) {
             background: $yellow;
         }
         &:hover {

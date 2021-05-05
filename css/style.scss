@@ -242,6 +242,10 @@ main {
             margin: 0 auto;
             padding-top: 20px;
             width: 40%;
+            a:link,
+            a:visited {
+                border-bottom: none;
+            }
             i:hover {
                 color: $pink;
                 transition: .5s color;
@@ -417,6 +421,10 @@ header {
             width: 100%;
             display: flex;
             justify-content: space-around;
+            a:link,
+            a:visited {
+                border-bottom: none;
+            }
             i {
                 color: $yellow;
                 &:hover {

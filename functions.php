@@ -67,7 +67,7 @@ add_filter( 'excerpt_more', 'simery_excerpt_read_more_link' );
 function simery_excerpt_read_more_link( $more ) {
 if ( ! is_admin() ) {
 global $post;
-return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">...</a>';
+return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">Read More &#8250; </a>';
 }
 }
 add_filter( 'intermediate_image_sizes_advanced', 'simery_image_insert_override' );

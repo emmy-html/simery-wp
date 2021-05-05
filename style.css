@@ -210,6 +210,9 @@ main a:visited {
       margin: 0 auto;
       padding-top: 20px;
       width: 40%; }
+      #home-page .simery-span .footer-social-media a:link,
+      #home-page .simery-span .footer-social-media a:visited {
+        border-bottom: none; }
       #home-page .simery-span .footer-social-media i:hover {
         color: #D90368;
         transition: .5s color; }
@@ -362,7 +365,6 @@ header {
         margin: 0; }
       #blog-content .sidebar .sidebar-tags .tagcloud a:link,
       #blog-content .sidebar .sidebar-tags .tagcloud a:visited {
-        background: #FC4FA0;
         border-bottom: none;
         color: #0D070D;
         font-size: 1rem !important;
@@ -371,14 +373,14 @@ header {
         padding: 5px;
         text-decoration: none;
         text-transform: lowercase; }
+        #blog-content .sidebar .sidebar-tags .tagcloud a:link:nth-of-type(n+1),
+        #blog-content .sidebar .sidebar-tags .tagcloud a:visited:nth-of-type(n+1) {
+          background: #FC4FA0; }
         #blog-content .sidebar .sidebar-tags .tagcloud a:link:nth-of-type(2n+1),
         #blog-content .sidebar .sidebar-tags .tagcloud a:visited:nth-of-type(2n+1) {
           background: #0091FF; }
         #blog-content .sidebar .sidebar-tags .tagcloud a:link:nth-of-type(3n+1),
         #blog-content .sidebar .sidebar-tags .tagcloud a:visited:nth-of-type(3n+1) {
-          background: #FC4FA0; }
-        #blog-content .sidebar .sidebar-tags .tagcloud a:link:nth-of-type(4n+1),
-        #blog-content .sidebar .sidebar-tags .tagcloud a:visited:nth-of-type(4n+1) {
           background: #FFD400; }
         #blog-content .sidebar .sidebar-tags .tagcloud a:link:hover,
         #blog-content .sidebar .sidebar-tags .tagcloud a:visited:hover {
@@ -387,6 +389,9 @@ header {
       width: 100%;
       display: flex;
       justify-content: space-around; }
+      #blog-content .sidebar .sidebar-social-media a:link,
+      #blog-content .sidebar .sidebar-social-media a:visited {
+        border-bottom: none; }
       #blog-content .sidebar .sidebar-social-media i {
         color: #FFD400; }
         #blog-content .sidebar .sidebar-social-media i:hover {
@@ -455,7 +460,6 @@ header {
           margin: 0; }
         #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link,
         #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited {
-          background: #FC4FA0;
           border-bottom: none !important;
           color: #0D070D;
           font-weight: 900;
@@ -463,14 +467,14 @@ header {
           padding: 5px;
           text-decoration: none;
           text-transform: lowercase; }
+          #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:nth-of-type(n+1),
+          #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:nth-of-type(n+1) {
+            background: #FC4FA0; }
           #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:nth-of-type(2n+1),
           #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:nth-of-type(2n+1) {
             background: #0091FF; }
           #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:nth-of-type(3n+1),
           #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:nth-of-type(3n+1) {
-            background: #FC4FA0; }
-          #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:nth-of-type(4n+1),
-          #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:nth-of-type(4n+1) {
             background: #FFD400; }
           #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:link:hover,
           #blog-content .blog-posts-single .blog-post-tags .blog-post-tags-container a:visited:hover {
